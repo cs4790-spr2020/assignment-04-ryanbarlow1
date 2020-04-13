@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
     <ProjectReference Include="..\BlabberApp.DataStore\BlabberApp.DataStore.csproj" />
@@ -8,14 +8,8 @@
     <ProjectReference Include="..\BlabberApp.Domain\BlabberApp.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\BlabberApp.Services\BlabberApp.Services.csproj" />
-  </ItemGroup>
-
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
-
-
 
 </Project>

@@ -1,6 +1,8 @@
 using BlabberApp.Domain;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections;
+using System.Linq;
 
 namespace BlabberApp.DataStore
 {
@@ -48,6 +50,11 @@ namespace BlabberApp.DataStore
                 return null;
             
             return _entities.Find(id);
+        }
+
+        public IEnumerable GetAll()
+        {
+            return _entities.AsEnumerable();
         }
     }
 }
